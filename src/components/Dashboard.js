@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Dashboard.css';
-import Header from './Header';
+// import Header from './Header';
 
 const Dashboard = () => {
   const location = useLocation();
 
   return (
     <div className="Dashboard_wrapper">
-      <Header />
+      {/* <Header /> */}
       <div className="logo">LOGO</div>
       <nav>
         <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
