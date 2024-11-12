@@ -7,6 +7,8 @@ import Breadcrumbs from './components/Breadcrumbs';
 import NoticeManagement from './components/CommunityAdmin/NoticeManagement';
 import PostManagement from './components/CommunityAdmin/PostManagement';
 import CommentManagement from './components/CommunityAdmin/CommentManagement';
+import BooksManageing from './components/adminBooks/BooksManageing';
+import BooksEmailing from './components/adminBooks/BooksEmailing';
 
 const App = () => {
   const isLoggedIn = true;
@@ -22,6 +24,8 @@ const App = () => {
             <Route path="/community/notice" element={<NoticeManagement />} />
             <Route path="/community/posts" element={<PostManagement />} />
             <Route path="/community/comments" element={<CommentManagement />} />
+            <Route path="/books/managing" element={<BooksManageing />} />
+            <Route path="/books/emailing" element={<BooksEmailing />} />
           </Routes>
         </div>
       ) : (
