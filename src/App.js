@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import AdminLogin from './components/adminLogin/AdminLogin';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Breadcrumbs from './components/Breadcrumbs';
 import NoticeManagement from './components/CommunityAdmin/NoticeManagement';
 import PostManagement from './components/CommunityAdmin/PostManagement';
@@ -16,7 +16,7 @@ const App = () => {
       {isLoggedIn ? (
         <div className="App">
           <Dashboard />
-          <Header />
+          {/* <Header /> */}
           <Breadcrumbs />
           <Routes>
             <Route path="/community/notice" element={<NoticeManagement />} />
