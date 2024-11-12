@@ -3,13 +3,16 @@ import { useLocation } from 'react-router-dom';
 
 const Breadcrumbs = () => {
   const location = useLocation();
-  const pathMap = {
-    '/community/notice': '커뮤니티 관리 > 공지사항 관리',
-    '/community/posts': '커뮤니티 관리 > 게시글 관리',
-    '/community/comments': '커뮤니티 관리 > 댓글 관리',
-  };
+  const paths = location.pathname.split('/').filter((path) => path);
 
-  return <div className="breadcrumbs">{pathMap[location.pathname]}</div>;
+  return (
+    <nav className="breadcrumbs">
+      <span>Home</span>
+      {paths.map((path, index) => (
+        <span key={index}> / {path}</span>
+      ))}
+    </nav>
+  );
 };
 
 export default Breadcrumbs;
