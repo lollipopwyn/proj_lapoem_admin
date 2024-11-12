@@ -1,0 +1,20 @@
+.admin-container {
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 30px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+.management-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
