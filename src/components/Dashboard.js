@@ -6,7 +6,7 @@ const Dashboard = () => {
   const location = useLocation();
 
   return (
-    <div className="Dashcoard_wrapper">
+    <div className="Dashboard_wrapper">
       <div className="logo">LOGO</div>
       <nav>
         <Link to="/" className={location.pathname === '/' ? 'active' : ''}>

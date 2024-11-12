@@ -1,3 +1,8 @@
+.management-container {
+  margin-left: 290px; /* 사이드바 넓이에 맞추어 여백 추가 */
+  padding: 30px;
+}
+
 .management-container h2 {
   font-size: 20px;
   font-weight: 600;
